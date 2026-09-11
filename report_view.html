@@ -1,0 +1,59 @@
+<html><head></head><body onload="Project.ReportView.getHtmlDataFromReport();" onfocusout="parent.setEmailRange();" style="overflow-wrap: break-word;">﻿
+
+
+
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="report_view.js"></script>
+    <script src="../../ClientGlobalContext.js.aspx" type="text/javascript"></script>
+
+    <style>
+        .ms-crm-ImageStrip-exporttoexcel16 {
+            background: transparent url(/_imgs/imagestrips/ribbonhomepage.png?ver=1231330564) no-repeat scroll -271px -513px;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+        }
+
+        body, html {
+            width: 100%;
+            height: 95%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI';
+            font-size: 12px;
+        }
+
+        .row-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .first-row {
+            background-color: lime;
+        }
+
+        .second-row {
+            flex-grow: 1;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+
+    <div style="text-align: right">
+        <a id="xlsxRef" href="#" style="color:#000000">
+            <img tabindex="-1" class="ms-crm-ImageStrip-exporttoexcel16" src="/_imgs/imagestrips/transparent_spacer.gif" style="vertical-align:top">
+            <span tabindex="-1" style="max-width:150px"> ЭКСПОРТ в EXCEL </span>
+        </a>
+    </div>
+    <div id="tblMain" class="row-container">
+        <iframe scrolling="auto" id="reportData" src="" frameborder="0" class="second-row"></iframe>
+
+    </div>
+
+</body></html>
